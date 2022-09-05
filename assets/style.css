@@ -1,37 +1,46 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
+.debug header {
+    background-color: aqua;
+    padding: 10;
+    padding: 10px 0;
+}
+
+.debug .container {
+    width: 70%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    background-color: rgb(255, 217, 0);
 }
 
-.row {
+.debug .banner {
+    background-color: pink;
+    height: 500px;
+}
+
+.banner {
     display: flex;
-    background-color: red;
-    flex-wrap: wrap;
-    
-
+    align-items: center;
 }
 
 
-[class^="col-"] {
-    padding: 0 1rem;
-    
+.debug .banner_1 {
+    width: 50%;
+    margin: 0 auto;
+    background-color: fuchsia;
+    height: 400px;
 }
 
-.col-1 {
-    width: calc((100% / 12) * 1);
+.container {
+    display: flex;
 }
 
-.col-2 {
-    width: calc((100% / 12) * 2);
+[class^=col-] {
+    padding: 5px;
 }
 
 .col-3 {
@@ -40,58 +49,65 @@
 
 .col-4 {
     width: calc((100% / 12) * 4);
-}
-
-.col-5 {
-    width: calc((100% / 12) * 5);
+    text-align: center;
 }
 
 .col-6 {
     width: calc((100% / 12) * 6);
-}
-
-.col-7 {
-    width: calc((100% / 12) * 7);
+    text-align: center;
 }
 
 .col-8 {
     width: calc((100% / 12) * 8);
+    text-align: center;
 }
 
-.col-9 {
-    width: calc((100% / 12) * 9);
+.login {
+    text-align: right;
 }
 
-.col-10 {
-    width: calc((100% / 12) * 10);
-}
-
-.col-11 {
-    width: calc((100% / 12) * 11);
-}
-
-.col-12 {
-    width: calc((100% / 12) * 12);
-}
-
-.debug [class^="col-"] {
-    background-color: red;
-    height: 50px;
-    border: 1px solid;
+.section_1,
+.section_2,
+.section_3 {
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    padding: 40px 0;
 }
 
 
-header,
+.debug .section_row {
+    height: 500px;
+}
+
+.section_row {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.grey {
+    background-color: lightgray;
+}
+
+
+.debug .col-8 {
+    background-color: green;
+}
+
+.debug .col-4 {
+    background-color: pink;
+}
+
 footer {
-    background-color: black;
-    color: white;
+    background-color: rgb(31, 31, 32);
+    padding: 40px 0;
 }
 
-.debug header {
-    height: 50px;
-    
-}
-
-.debug footer {
-    height: 240px;
+.footer_container {
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: green;
 }
