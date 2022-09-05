@@ -8,20 +8,22 @@
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.flexing {
+.row {
     display: flex;
+    background-color: red;
+    flex-wrap: wrap;
+    
+
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 [class^="col-"] {
     padding: 0 1rem;
+    
 }
 
 .col-1 {
@@ -74,9 +76,10 @@
 
 .debug [class^="col-"] {
     background-color: red;
-    height: 600px;
+    height: 50px;
     border: 1px solid;
 }
+
 
 header,
 footer {
@@ -84,7 +87,11 @@ footer {
     color: white;
 }
 
-.debug header,
+.debug header {
+    height: 50px;
+    
+}
+
 .debug footer {
     height: 240px;
 }
